@@ -1,3 +1,4 @@
+
 //A quiz program on question and answer
 
 const quiz = [
@@ -17,7 +18,7 @@ for (const [question, answer] of quiz){
         }
         alert(`You scored ${score} points`);
     }
-    
+
 const question = "What is your name";
 const answer = prompt(question);
 alert(`Your name is ${answer}`);
