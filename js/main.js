@@ -1,19 +1,3 @@
-
-const question = "What is your name";
-const answer = prompt(question);
-alert(`Your name is ${answer}`);
-
-const department = [];
-department[0] = 'Human Resource';
-department[1] = ' Marketing';
-department[2] = ' I.T';
-department[3] = ' Finance';
-
-alert(department);
-alert(department.length);
-alert(department.sort());
-alert(department.indexOf('I.T'));
-
 //A quiz program on question and answer
 
 const quiz = [
@@ -31,5 +15,23 @@ for (const [question, answer] of quiz){
      } else{
             alert(`Incorrect answer, The correct answer is ${answer}`);
         }
+        alert(`You scored ${score} points`);
     }
+    
+const question = "What is your name";
+const answer = prompt(question);
+alert(`Your name is ${answer}`);
+
+const department = [];
+department[0] = 'Human Resource';
+department[1] = ' Marketing';
+department[2] = ' I.T';
+department[3] = ' Finance';
+
+alert(department);
+alert(department.length);
+alert(department.sort());
+alert(department.indexOf('I.T'));
+
+
 
