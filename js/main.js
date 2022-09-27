@@ -1,3 +1,12 @@
+function testdisplay(){
+    var testsave = document.getElementById('content').value;
+    document.getElementById('test').innerHTML = testsave;
+}
+
+/*function fun(p1, p2){
+    return p1 * p2;
+}
+document.getElementById("sum").innerHTML = fun(4, 3);
 
 //A quiz program on question and answer
 
@@ -32,7 +41,7 @@ department[3] = ' Finance';
 alert(department);
 alert(department.length);
 alert(department.sort());
-alert(department.indexOf('I.T'));
+alert(department.indexOf('I.T'));*/
 
 
 
