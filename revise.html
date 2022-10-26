@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<title>Week 1 Notes</title>
+
+<style>
+    /* styles for the table based board */
+    .board {
+      width: 320px;
+      height: 320px;
+    }
+    .board td,
+    .board tr {
+      width: 33.3%;
+      height: 33.3%;
+    }
+    .board td {
+      border-right: 1px solid;
+      border-bottom: 1px solid;
+      font-size: 5em;
+      text-align: center;
+    }
+    .board td:last-child {
+        border-right: 0;
+      }
+      .board tr:last-child td {
+        border-bottom: 0;
+      }
+</style>
+
+<script>
+    function reqOne(){
+       const input = document.getElementById("req1").value;
+        const displayOut = document.getElementById("display").innerHTML = input;
+    }
+    function reqTwo(){
+        const inp = document.getElementById("req2").value;
+        const inputInt = parseInt(inp);
+        const disOut = document.getElementById("result").innerHTML = sum(inputInt) ;
+    }
+    function sum(num){
+        let total = 0;
+        for(let i = 1; i <= num; i++){
+            total += i;
+        }
+        return total;
+    }
+    function reqThree(){
+        const inp1 = document.getElementById("req3").value;
+        const inp2 = document.getElementById("req3i").value;
+        const inputInt1 = parseInt(inp1);
+        const inputInt2 = parseInt(inp2);
+        const ans = inputInt1 + inputInt2;
+        const dis = document.getElementById("answer").innerHTML = ans;
+    }
+
+</script>
+    
+</head>
+
+<body>
+   <h1>Story Editor</h1>
+   <input type="text" id="req1">
+   <button type="submit" id="btn" onclick="reqOne()">Submit</button>
+   <div id="display"></div>
+<br>
+   <input type="text" id="req2">
+   <button type="submit" id="btn" onclick="reqTwo()">Submit</button>
+   <div id="result"></div>
+   <br>
+   <input type="text" id="req3"> + <input type="text" id="req3i">
+   <button type="submit" id="btn" onclick="reqThree()">Submit</button>
+   <div id="answer"></div>
+   <br>
+
+   <div>
+    <table class="board">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <button type="reset" id="reset">Reset</button>
+   </div>
+
+
+</body>
+</html>

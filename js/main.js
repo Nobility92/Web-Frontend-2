@@ -1,9 +1,56 @@
-function testdisplay(){
+const form = document.forms['search'];
+form.addEventListener ('submit', search, false);
+
+function search(event) {
+    alert(' Form Submitted');
+}
+/*function disableSubmit(event) {
+    if(event.target.value === ''){
+        document.getElementById('pp').disabled = true;
+    } else {
+        document.getElementById('pp').disabled = false;
+    }
+}*/
+
+const p = document.createElement("p");
+const n = document.createTextNode('This is the new Paragraph');
+const papa = document.getElementById('oga');
+p.appendChild(n);
+papa.appendChild(p);
+
+
+
+const take = document.getElementsByClassName('intro');
+document.getElementById('demo').innerHTML = "What is your name? " + take[1].innerHTML;
+
+
+
+let user = {
+    name: "Henry",
+    age: 30,
+    occupation: "Web Developer",
+    children: true,
+};
+//adding a property
+    user.city = "Ibadan";
+    //removing a property
+    delete user.children;
+    //changing the value of a property
+    user.occupation = "Forex Trader";
+    //
+    let txt = " ";
+    for (const x in user){
+        txt += x + ":" +" " + user[x] + " ";
+    }
+    document.getElementById("sum").innerHTML = txt;
+
+   
+/*function testdisplay(){
     var testsave = document.getElementById('content').value;
     document.getElementById('test').innerHTML = testsave;
 }
 
-/*function fun(p1, p2){
+function fun(p1, p2){
     return p1 * p2;
 }
 document.getElementById("sum").innerHTML = fun(4, 3);
