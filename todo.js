@@ -48,4 +48,5 @@ function newtask() {
         div.style.display = "none";
       }
     }
+    
   }
