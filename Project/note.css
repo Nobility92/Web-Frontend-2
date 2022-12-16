@@ -87,3 +87,7 @@ li caption{
     padding: 10px;
 
 }
+li:hover{
+    border-radius: 50px 150px;
+    
+}
