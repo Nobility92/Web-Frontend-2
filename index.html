@@ -1,38 +1,41 @@
- <!doctype html>
- <html>
- <head>
- <title>Week 1 Notes</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COURSE HOMEPAGE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,100;1,200;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/large.css"/>
 
- <script>
-    function loadStory(){
-        var StoryName = document.getElementById("name_input").value;
-        var storyHTML = localStorage.getItem(StoryName);
-        document.getElementById("story_editor").value = storyHTML;
-    }
-    function saveStory(){
-        var StoryName = document.getElementById("name_input").value;
-        var story = document.getElementById("story_editor").value;
-        localStorage.setItem(StoryName, story);
-    }
-    function displayStory(){
-        var story = document.getElementById("story_editor").value;
-        document.getElementById("story_display").innerHTML = story;
-    }
-</script>
+</head>
+<body>
+    <div id="content">
+    <header>
+        <div id="pic-area">
+            <h1 class="name">Nwaokonko, Uchenna Henry</h1>
+            </div>
+    </header>
+    <main>
+    <div id="homegrid">
+        <h2 class="intro">WDD 330: Assignment Portal</h2>
+        <ul>
+            <li>Challenge One: <a href="challlenge_one/todo.html" target="_blank">ToDo List</a></li>
+            <li>Challenge Two: <a href="project/note.html" target="_blank">Final Project</a></li>
+        </ul>
+    </div>
+</main>
+<footer>
+    <div id="summary">
+        <p>&copy; 2022 | Nwaokonko, Uchenna Henry | Nigeria</p>
+        <h4>Last Updated: <span id="update"></span></h4> 
+        <script src="js/lastmodify.js"></script>  
+    </div>
+</footer>
+</div>
+</body>
 
 
- </head>
-
- <body>
-    <h1>Story Editor</h1>
- Story Name:<input id=name_input></input>
-<section>
-<button onclick="loadStory()">Find and Edit It</button>
-<button onclick="saveStory()">Save It</button>
-<button onclick="displayStory()">Display It</button>
-</section>
-<textarea id="story_editor" placeholder="Write a totally awesome story
- here."></textarea>
-<section id="story_display"></section>
- </body>
- </html>
+</html>
